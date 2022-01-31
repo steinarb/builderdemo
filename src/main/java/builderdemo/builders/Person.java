@@ -29,12 +29,12 @@ public class Person {
             return bean;
         }
 
-        public Builder setName(String name) {
+        public Builder name(String name) {
             this.name = name;
             return this;
         }
 
-        public Builder setAge(Integer age) {
+        public Builder age(Integer age) {
             this.age = age;
             return this;
         }

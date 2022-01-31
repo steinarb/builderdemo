@@ -11,8 +11,8 @@ class PersonTest {
         String name = "John Doe";
         Integer age = 42;
         Person bean = Person.with()
-            .setName(name)
-            .setAge(age)
+            .name(name)
+            .age(age)
             .build();
         assertEquals(name, bean.getName());
         assertEquals(age, bean.getAge());
@@ -22,7 +22,7 @@ class PersonTest {
     void testCreateNameOnly() {
         String name = "John Doe";
         Person bean = Person.with()
-            .setName(name)
+            .name(name)
             .build();
         assertEquals(name, bean.getName());
         assertNull(bean.getAge());
