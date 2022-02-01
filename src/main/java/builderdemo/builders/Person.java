@@ -17,6 +17,8 @@ public class Person {
         return new Builder();
     }
 
+    private Person() { }
+
     public static class Builder {
 
         private String name;
@@ -38,6 +40,8 @@ public class Person {
             this.age = age;
             return this;
         }
+
+        private Builder() { }
 
     }
 
